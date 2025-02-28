@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+    <h4>Ingreso de datos</h4>
+    Ingrese su nombre
+    <input type="text" id="nombre" onfocus="f_focus()" onblur="f_blur()">
+    <script>
+        function f_focus() {
+            document.getElementById('nombre').value = '';
+            document.getElementById('nombre').style.background = '';
+        }
+        function f_blur() { // salta la alerta si se deja la casilla vacia
+            if (document.getElementById('nombre').value == '') {
+                document.getElementById('nombre').style.background = 'red'
+                swal('Debe ingresar datos...');
+            }
+        }
+    </script>
+</body>
+
+</html>

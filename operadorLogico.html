@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //operador && (y)
+        let a = 20;
+        let b = 30;
+        document.write(a == b);
+        document.write('<br>')
+
+        let continente = prompt('Ingrese su continente:');
+        let edad = prompt('Ingrese su edad:');
+        edad = parseInt(edad);
+        if (continente == 'America' && edad >= 18) {
+            document.write('Eres un adulto americano');
+        } else {
+            document.write('No eres adulto o no eres americano');
+        }
+
+        //operador || (o)
+        let dia, mes, anio;
+        dia = prompt('INGRESE EL dia');
+        mes = prompt('INGRESE EL mes');
+        anio = prompt('INGRESE EL anio');
+
+        if (mes == 1 || mes == 2 || mes == 3) {
+            document.write('Pertenece al primer trimeste');
+        } else {
+            document.write('No pertenece al primer trimestre');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //ejemplo 1
+        let palabra = 'JavaScript';
+
+        for (let f in palabra) {
+            document.write(f);
+            document.write('<br>')
+        }
+        document.write('fin del bucle');
+        document.write('<br>')
+
+
+        //ejemplo 2
+        let palabra2 = 'murcielago';
+        vocales = 0;
+        for (let h in palabra2) {
+            if (palabra2[h] == 'a' || palabra2[h] == 'e' || palabra2[h] == 'i' || palabra2[h] == 'o' || palabra2[h] == 'u') {
+                vocales++;
+            }
+        }
+        document.write('El numero de vocales de la palabra ', palabra2, ' es... ',vocales)
+
+        //ejemplo 3
+        //el bucle foiIn no funciona para valores enteros
+        let valor = 5;
+        for (let g in valor) {
+            document.write(g);
+            document.write('<br>')
+        }
+    </script>
+</body>
+
+</html>

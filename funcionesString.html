@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let palabra = 'JavaScript';
+        document.write('La palabra es: ', palabra);
+        document.write('<br>');
+
+        //ver tamaño de un texto
+        document.write('Cantidad de letras: ', palabra.length);
+        document.write('<br>');
+
+        //ver caracteres especificos de un texto
+        document.write('Primeras 4 letras: ', palabra.slice(0, 4));
+        document.write('<br>');
+
+        //ver caracteres especificos de un texto
+        document.write('Primeras 4 letras: ', palabra.substring(0, 4));
+        document.write('<br>');
+
+        //cambiar valores en un texto
+        let saludo = 'Hola a todos';
+        document.write('Antes del replace: ', saludo);
+        document.write('<br>');
+        saludo = saludo.replace('Hola', 'Adios')
+        document.write('Despues de replace: ', saludo);
+        document.write('<br>');
+
+        //convierte en mayusculas
+        document.write('Convierte a mayusculas: ', palabra.toUpperCase());
+        document.write('<br>');
+
+        //convierte en minusculas
+        document.write('Convierte a minusculas: ', palabra.toLowerCase());
+        document.write('<br>');
+
+        //unir texto
+        let palabra2 = 'Curso de '
+        document.write('Unir palabras: ', palabra2.concat(palabra));
+        document.write('<br>');
+
+        //acortar espacios al principio de textos
+        let palabra3 = '        Hola          ';
+        document.write(palabra3.trimStart());
+        document.write('<br>');
+
+        //acortar espacios al final de textos
+        document.write(palabra3.trimEnd());
+        document.write('<br>');
+
+        //acortar espacios de textos
+        document.write(palabra3.trim());
+        document.write('<br>');
+
+        //cortar cantidad de caracteres
+        document.write(palabra.split('Script'))
+        document.write('<br>');
+    </script>
+</body>
+
+</html>

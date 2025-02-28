@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        for (let f = 0; f < 10; f++) {
+            document.write(f);
+            document.write('<br>');
+            if (f == 5) { //detener el bucle con break cuando se cumple la condicion
+                break;
+            }
+        }
+        document.write('<br>Fin del bucle <br>')
+
+        palabra = 'JavaScript';
+        resultado = '';
+        for (let g in palabra) {
+            if (palabra[g] == 'a') {
+                continue; //hace que continue las instrucciones, es decir que ignora 
+            } else {
+                resultado += palabra[g];
+            }
+        }
+        document.write(resultado);
+
+
+    </script>
+</body>
+
+</html>

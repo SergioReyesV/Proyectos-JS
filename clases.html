@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        class Persona {  //clase Persona con atributos y metodos
+
+            nombre = 'Sergio';
+            apellido = 'Reyes';
+            pais = 'Mexico';
+            telefono = 46546546;
+            email = 'sergio@gmail.com';
+
+            trabajar() {
+                return 'Trabaja en la planta nuclear';
+            }
+            estudiar() {
+                return 'Estudiando en la escuela';
+            }
+        }
+
+
+        const sergio=new Persona(); //objetos de mi clase Persona
+        const samuel=new Persona();
+
+        document.write(sergio.nombre+' '+sergio.apellido);
+        document.write('<br>');
+        document.write(sergio.trabajar());
+        document.write('<br>');
+
+        document.write('Samuel'+' '+samuel.apellido);
+        document.write('<br>');
+        document.write(samuel.estudiar());
+        document.write('<br>');
+        
+
+
+
+
+    </script>
+</body>
+
+</html>

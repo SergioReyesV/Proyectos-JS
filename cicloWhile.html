@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numero = parseInt(prompt('Ingrese un numero'));
+
+        //Ciclo while
+        i = 0;
+        while (i <= numero) {
+            document.write(i)
+            i++;
+            document.write('<br>')
+        }
+        document.write('Fin del bucle');
+        document.write('<br>')
+
+        //Ciclo While
+        let f = 1;
+        while (f < 10) {
+            document.write('Vuelta numero ', f);
+            document.write('<br>');
+            f++;
+        }
+        document.write('Fin del bucle');
+
+        let g = 1;
+        let suma = 0;
+        let valor;
+        while (g < 5) {
+            valor = parseInt(prompt('Ingrese el valor ...'));
+            suma = suma + valor;
+            g++;
+        }
+        document.write('La suma es: ', suma, '<br>');
+    </script>
+</body>
+
+</html>

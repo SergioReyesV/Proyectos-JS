@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Funciones open()</h4>
+    <form action="">
+        Abrir en otra pestaña
+        <input type="button" value="Pestaña" onclick="pestania()"><br><br>
+        Abrir en otra ventana
+        <input type="button" value="Ventana" onclick="ventana()"><br><br>
+        Salir
+        <input type="button" value="Salir" onclick="salir()">
+
+    </form>
+    <script>
+        function pestania(){
+            let ventana = open();
+            ventana.document.write('Soy otra pestaña');
+        }
+        function ventana(){
+            let ventana = open('','','width=400px','height=250');
+            ventana.document.write('Soy otra ventana');
+        }
+        function salir(){
+            let respuesta = confirm('DESEA SALIR DE LA PAGINA?');
+            if (respuesta == true) {
+                window.close();
+            }
+        }
+    </script>
+</body>
+</html>

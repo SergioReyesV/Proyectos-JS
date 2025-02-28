@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+    <h4>Seleccione diponibildad de horario</h4>
+    <form action="">
+        <input type="radio" id="radio1" name="horario">Matutino <br>
+        <input type="radio" id="radio2" name="horario">Vespertino <br>
+        <input type="radio" id="radio3" name="horario">Nocturno <br>
+
+        <input type="button" value="Confirmar" onclick="seleccionar()">
+
+    </form>
+    <script>
+        function seleccionar(){
+            if(document.getElementById('radio1').checked){
+                swal('Horario de 6am a 3pm')
+            }if(document.getElementById('radio2').checked){
+                swal('Horario de 3pm a 10pm')
+            }if(document.getElementById('radio3').checked){
+                swal('Horario de 10pm a 6am')
+            }
+        }
+    </script>
+</body>
+
+</html>

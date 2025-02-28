@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4>Arrays en JavaScript</h4> 
+    <script>
+        let numeros = [];
+        numeros = [15, 80, 650, 5030, -10];
+        document.write('Elementos del array: ', numeros);
+        document.write('<br>');
+
+        //mostrar el primer elemento del array
+        document.write('Primer elemento del array: ', numeros[0])
+        document.write('<br>');
+
+        numeros[0] = 14;
+        document.write('Elementos del array: ', numeros);
+        document.write('<br>');
+
+        let frutas = ['manzanas', 'peras', 'naranjas', 'mangos'];
+        document.write('Elementos del array frutas: ', frutas);
+        document.write('<br>');
+
+        //metodos de los arrays
+
+        //cantidad de elementos
+        document.write('Cantidad: ', frutas.length)
+        document.write('<br>');
+        //ultimo elemento del array
+        document.write('Ultimo elemento: ', numeros[numeros.length - 1]);
+        document.write('<br>');
+        //Arrays en tipo texto
+        document.write('En string: ', numeros.toString());
+        document.write('<br>');
+        //Unir tipos de arrays
+        let letras = ['a', 'b', 'c'];
+        let numeros2 = [1, 2, 3];
+        document.write('Alfanumerico: ', letras.concat(numeros2))
+        document.write('<br>');
+        //borrar el ultimo elemento del array
+        numeros.pop();
+        document.write(numeros);
+        document.write('<br>');
+
+        //agregar elemento al final
+        numeros.push(123);
+        document.write(numeros)
+        document.write('<br>');
+        //eliminar primera elemento
+        numeros.shift(numeros)
+        document.write(numeros)
+        document.write('<br>');
+        //agregar elemento al inicio
+        numeros.unshift(999)
+        document.write(numeros)
+        document.write('<br>');
+        //eliminar elemento de cualquier lugar del array
+        numeros.splice(2, 3)
+        document.write(numeros)
+        document.write('<br>');
+
+        //copiar un array
+        let cantidades = [100, 200, 300, 400, 500];
+        let copia = cantidades.slice(1, 4);
+        document.write('Array copia: ', copia)
+        document.write('<br>');
+
+        //ordena alfabeticamente
+        let objetos = ['carro', 'botella', 'planeta', 'zorro', 'elefante']
+        document.write('ordena alfabeticamente: ', objetos.sort());
+        document.write('<br>');
+
+        //ordena al reves del alfabeto
+        document.write('ordena al reves del alfabeto: ', objetos.reverse());
+        document.write('<br>');
+
+
+
+
+    </script>
+</body>
+
+</html>

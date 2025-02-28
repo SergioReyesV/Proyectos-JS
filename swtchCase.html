@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let valor;
+        valor = prompt('Ingrese un valor entre 1 y 3');
+        valor = parseInt(valor);
+        switch (valor) {
+            case 1:
+                document.write('Ingreso el numero 1');
+                break;
+            case 2:
+                document.write('Ingreso el numero 2')
+                break;
+            case 3:
+                document.write('Ingreso el numero 3');
+                break;
+            default: document.write('Error, no ingresaste un valor valido')
+                break;
+        }
+
+        document.write('<br>')
+
+        let color;
+        color = prompt('Ingrese un color entre rojo, azul y rosa');
+        switch (color) {
+            case 'rojo':
+                document.write('Ingreso el rojo');
+                break;
+            case 'azul':
+                document.write('Ingreso el azul')
+                break;
+            case 'rosa':
+                document.write('Ingreso el rosa');
+                break;
+            default: document.write('Error, no ingresaste un color valido')
+                break;
+        }
+
+    </script>
+</body>
+
+</html>

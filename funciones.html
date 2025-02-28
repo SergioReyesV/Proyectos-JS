@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //funciones declarativas
+        function saludar() {
+            document.write('Hola a todos');
+        }
+        saludar();
+        document.write('<br>');
+
+
+        //funciones con paramatros
+        let resultado;
+        function suma(valor1, valor2) {
+            resultado = valor1 + valor2;
+            document.write('Resultado de la suma: ', resultado)
+        }
+        suma(5, 8); // se le asigna el valor de los parametros
+        document.write('<br>');
+
+        //funciones con return
+        function suma2(a, b){
+            return a + b; 
+        }
+        document.write(suma2(30,60))
+        document.write('<br>');
+
+        function saludo(){
+            return 'hola a todos';
+        }
+        var mensaje = saludo();
+        document.write(mensaje);
+
+
+    </script>
+</body>
+
+</html>

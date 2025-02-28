@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <h4>TextArea</h4>
+    <p><textarea name="" id="texto" rows="10" cols="35" maxlength="140" onfocus="vaciar(this)"></textarea></p>
+    <p>Caracteres disponibles:
+        <span id="cantidad">20</span>
+    </p>
+    <script>
+        document.getElementById('texto').addEventListener('keyup', caracteres);
+        function caracteres() {
+            let cont = document.getElementById('texto').value.length;
+            let disponibles = 20 - parseInt(cont);
+            document.getElementById('cantidad').innerHTML = disponibles;
+            if (disponibles == 0) {
+                swal('Cantidad de caracteres agotados')
+            }
+        }
+    </script>
+</body>
+
+</html>

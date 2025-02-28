@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <h5>Comentarios</h5>
+    <form action="">
+        <p><textarea name="" id="Comentarios" rows="20" cols="40" ></textarea></p>
+        <input type="button" value="Enviar" onclick="comentar()">
+    </form>
+    <script>
+        function comentar(){
+            if (document.getElementById('Comentarios').value.length > 100 || document.getElementById('Comentarios').value.length == '') {
+                swal('Tu comentario es muy largo o esta vacio');                
+            }else{
+                swal('Gracias por tu comentario');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let valor;
+/*
+        do {
+            valor = parseInt(prompt('Ingrese valor 1 para salir...'));
+            document.write('Ingreso valor: ', valor);
+            document.write('<br>');
+        } while (valor != 1);
+        document.write('Fin del bucle');
+
+*/
+
+        let usuario, clave, control;
+        control=0;
+        usuario = prompt('Ingrese nombre de usuario...');
+        clave = prompt('Ingrese su contraseña...');
+        do {
+            if(clave != 'Miacceso33%'){
+                clave=prompt('Contrasena incorrecta \n'+
+                    'intente de nuevo...');
+            }else{
+                control=1;
+            }
+        } while (control!=1);
+        document.write('Acceso correcto --- Bienvenido ',usuario);
+
+
+    </script>
+</body>
+
+</html>
