@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="tiempoElegido"><br>
+
+    <button onclick="comenzarTiempo()">Alarma</button><br>
+
+    <h1 style="color: darkred;" id="textoAlarma">APAGADO!</h1>
+
+    <script>
+        function comenzarTiempo() {
+            let elementoSegundos = document.getElementById('tiempoElegido').value;
+            setTimeout(tiempoCumplido, 1000 * elementoSegundos);
+        }
+        function tiempoCumplido() {
+            let elemetoAlarma = document.getElementById('textoAlarma');
+            elemetoAlarma.textContent = 'Encendido';
+            elemetoAlarma.style.color = 'green'
+           alert('SE TERMINO EL TIEMPO');
+        }
+    </script>
+</body>
+
+</html>
