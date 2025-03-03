@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+
+<body>
+    <div id="nombre"></div>
+    <script>
+        let datoJson;
+        fetch('persona.json')
+            .then(res => res.json())
+            .then((salida) => {
+                datoJson = salida;
+                let elementoTexto = document.getElementById("nombre");
+                elementoTexto.textContent = datoJson.direccion.calle;
+            })
+            .catch(function(error){alert(error)})
+
+    </script>
+</body>
+
+</html>
