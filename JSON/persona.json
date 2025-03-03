@@ -1,0 +1,13 @@
+{
+    "nombre": "Juan Perez",
+    "edad": 34,
+    "estudiante": false,
+    "direccion": {
+        "calle": "Ave. Primer no. 555",
+        "ciudad": "Mexicali"
+    },
+    "telefonos": [
+        "123-456-789",
+        "987-654-321"
+    ]
+}

@@ -13,8 +13,16 @@
     <button onclick="comenzarTiempo()">Alarma</button><br>
 
     <h1 style="color: darkred;" id="textoAlarma">APAGADO!</h1>
+    <audio controls id="audioAlarma">
+    <source src="sonidos/alarma.mp3" type="audio/mpeg">
+    Sonido no habilitado
+    </audio>
+
 
     <script>
+
+        let elementoSonido = document.getElementById('audioAlarma')
+
         function comenzarTiempo() {
             let elementoSegundos = document.getElementById('tiempoElegido').value;
             setTimeout(tiempoCumplido, 1000 * elementoSegundos);
@@ -23,9 +31,12 @@
             let elemetoAlarma = document.getElementById('textoAlarma');
             elemetoAlarma.textContent = 'Encendido';
             elemetoAlarma.style.color = 'green'
+            elementoSonido.play();
            alert('SE TERMINO EL TIEMPO');
         }
     </script>
+
+
 </body>
 
 </html>

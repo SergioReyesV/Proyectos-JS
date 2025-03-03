@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubClases_01</title>
+</head>
+<body>
+    <script>
+
+        //HERENCIA 
+
+        class Deportista{
+            constructor(nombre, edad){
+                 this.nombre = nombre;
+                 this.edad=edad;
+            }
+        }
+        class Futbolista extends Deportista{
+            constructor(nombre,edad,goles){
+                super(nombre,edad);
+                this._goles=goles;
+            }
+            get goles(){
+                return this._goles;
+            }
+            set goles(nuevoGoles){
+                this._goles=nuevoGoles;
+            }
+        }
+    </script>
+</body>
+</html>
