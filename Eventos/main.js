@@ -28,11 +28,11 @@ function verificaNum(event) {
     }
 }
 function keyArriba(event) {
-    console.log('Entrda del usuario: ' , event.target.value);
+    console.log('Entrda del usuario: ', event.target.value);
 }
 
-function keypresionada(event){
-    console.log('Caracter ingresado: ' , event.key);
+function keypresionada(event) {
+    console.log('Caracter ingresado: ', event.key);
 }
 
 boton.addEventListener('click', mensajeAlert);
