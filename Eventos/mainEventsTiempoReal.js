@@ -3,21 +3,20 @@ const mensajeIngresado = document.getElementById('mensajeIngresado');
 const botonEnviar = document.getElementById('botonEnviar');
 
 function mostrarMensajes(contenido){
-    const contenedorMsg = document.getElementById('mensajeChat');
-    const elementoMsg = document.createElement('p');
-    elementoMsg.innerText = contenido;
-    contenedorMsg.appendChild(elementoMsg);
+    const contenedorMensages = document.getElementById('mensajeChat');
+    const elementoMensage = document.createElement('p');
+    elementoMensage.innerText = contenido;
+    contenedorMensages.appendChild(elementoMensage);
 }
 
-botonEnviar.onclick(on);
-function on(){
-    const mesaje = mensajeIngresado.value;
-    mostrarMensajes(mesaje);
-    socket.send(mesaje);
-}
-socket.onmessage = onmsg();
 
-function onmsg(event){
+botonEnviar.onclick = function enviarMsg(){
+    const mensaje = mensajeIngresado.value;
+    mostrarMensajes(mensaje);
+    socket.send(mensaje);
+}
+
+socket.onmessage = function recibirMsg(event){
     const mensaje = event.data;
-    mostrarMensajes(mensaje)
+    mostrarMensajes(mensaje);
 }
